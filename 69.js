@@ -8,7 +8,7 @@ const checkinUrl = "https://69yun69.com/user/checkin";
 const userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 16_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1";
 
 // ⚠️ LOON 配置变量方式
-// 多账号配置，每个账号一个对象，LOON 里需配置 69yunzh1/69yunmm1, 
+// 多账号配置，每个账号一个对象，持久化需配置 69yunzh1/69yunmm1, 
 //69yunzh2/69yunmm2 ...
 const accounts = [];
 let index = 1;
@@ -24,7 +24,7 @@ if (accounts.length === 0) {
   $notification.post(
     "69云签到 ❌",
     "未配置账号密码",
-    "请在 LOON 脚本面板或变量中配置至少一个账号，如 69yunzh1 / 69yunmm1"
+    "请在持久化里配置至少一个账号，如 69yunzh1 / 69yunmm1"
   );
   $done();
 }
