@@ -2,7 +2,6 @@
  * 声荐自动任务脚本（持久化Token版）
  * 功能：自动签到 + 自动领取小红花
  * 适配环境：Loon / Surge / Quantumult X
- * 作者：ChatGPT 整合优化
  * 更新时间：2025-11-10
  */
 
@@ -60,7 +59,7 @@ if (!token) {
   Env.notify(
     "🛑 声荐 Token 未配置",
     "请在 Loon Scriptable Variables 配置 token",
-    "变量名: shangjian_token\n格式: Bearer xxxxxxxx"
+    "变量名: yy_token\n格式: Bearer xxxxxxxx"
   );
   Env.done();
 }
