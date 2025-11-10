@@ -11,8 +11,15 @@
 accountList 变量示例：
 邮箱1|密码1
 邮箱2|密码2
-邮箱3|密码3
-*/
+邮箱3|密码// ========== 参数 ==========
+let text = $argument.text || "";      
+let owner = $argument.owner || "";    
+let repo = $argument.repo || "";      
+let branch = $argument.branch || "";  
+let upload = $argument.upload  || ""; // true 或 false
+let path = $argument.path || ""; 
+let ghToken = $argument.ghToken || ""; 
+
 
 const loginUrl = "https://69yun69.com/auth/login";
 const checkinUrl = "https://69yun69.com/user/checkin";
