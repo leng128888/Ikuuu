@@ -1,3 +1,5 @@
+//App Store每日限免推送
+
 const url = "https://gofans.cn/limited/ios";
 
 const headers = {
