@@ -1,8 +1,19 @@
 
 // 自动获取声荐token
 
+/******************************************
 
+手动打开声荐小程序，通知获取后禁用脚本
+LOON配置
+[MITM]
+hostname = xcx.myinyun.com
 
+[Script]
+http-request ^https?:\/\/xcx\.myinyun\.com:4438\/.* 
+tag=声荐获取Token, 
+script-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js
+
+******************************************/
 (function () {
   try {
     const PERSIST_KEY = 'yy_token'; // ✅ 改成 yy_token
