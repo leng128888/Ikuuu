@@ -18,7 +18,7 @@ script-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js
 ******************************************/
 (function () {
   try {
-    const PERSIST_KEY = 'yy_token'; // ✅ 改成 yy_token
+    const PERSIST_KEY = 'yy_token'; // 
 
     function notify(title, subtitle, message) {
       try { $notification.post(title, subtitle || '', message || ''); } catch (e) {}
@@ -31,7 +31,7 @@ script-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js
       const ok = $persistentStore.write(clean, PERSIST_KEY);
       if (ok) {
         const preview = clean.length > 12 ? `${clean.slice(0,8)}...${clean.slice(-4)}` : clean;
-        notify('声荐TOKEN 授权已保存', `key: ${PERSIST_KEY}`, preview);
+        notify('✅声荐TOKEN 授权已保存', `key: ${PERSIST_KEY}`, preview);
       } else {
         notify('Myinyun 授权保存失败', `key: ${PERSIST_KEY}`, '');
       }
