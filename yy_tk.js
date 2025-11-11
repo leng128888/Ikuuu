@@ -1,4 +1,10 @@
-// save_myinyun_auth_response.js
+// [MITM]
+hostname = xcx.myinyun.com
+
+[Script]
+http-request ^https?:\/\/xcx\.myinyun\.com:4438\/.* tag=声荐获取Token, script-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js
+
+
 // Response 阶段脚本：尽量从 response 中探测并保存 Authorization 到 $persistentStore
 (function () {
   try {
