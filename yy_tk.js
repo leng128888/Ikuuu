@@ -1,9 +1,8 @@
-// [MITM]
-//hostname = xcx.myinyun.com
 
 
 
-// Response 阶段脚本：尽量从 response 中探测并保存 Authorization 到 $persistentStore
+
+
 (function () {
   try {
     const PERSIST_KEY = 'yy_token'; // ✅ 改成 yy_token
