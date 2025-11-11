@@ -9,9 +9,11 @@ LOON配置
 hostname = xcx.myinyun.com
 
 [Script]
-http-request ^https?:\/\/xcx\.myinyun\.com:4438\/.* 
+http-request ^https?:\/\/xcx\.myinyun\.com:4438\/napi\/wx\/getUserDetail
 tag=声荐获取Token, 
 script-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js
+
+
 
 ******************************************/
 (function () {
