@@ -36,7 +36,7 @@ script-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js
       if (ok) {
         // token预览（长token脱敏显示，保护隐私）
         const preview = clean.length > 20 ? `${clean.slice(0,12)}...${clean.slice(-6)}` : clean;
-        notify('声荐TOKEN 授权已保存', `key: ${PERSIST_KEY}`, preview);
+        notify('✅ 声荐TOKEN  已保存', `key: ${PERSIST_KEY}`, preview);
       } else {
         notify('Myinyun 授权保存失败', `key: ${PERSIST_KEY}`, '');
       }
