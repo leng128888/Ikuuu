@@ -97,7 +97,7 @@ function signIn() {
     const code = res.status || res.statusCode;
 
     if (code === 200) {
-      Env.notify("✅ 声荐签到成功", "签到结果", "已成功完成签到任务");
+      Env.notify("✅ 声荐签到成功", "签到结果", "🎉已成功完成签到任务");
       claimFlower();
     } else {
       Env.notify("⚠️ 声荐签到结果", `状态码: ${code}`, data);
