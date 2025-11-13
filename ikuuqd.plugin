@@ -9,4 +9,4 @@ hostname = ikuuu.de
 
 [Script]
 # 每天早上9点定时签到
-cron "0 9 * * *" scrip-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/ikuuqd.js, timeout=60, tag=鸿星尔克签到
+cron "0 9 * * *" scrip-path=https://raw.githubusercontent.com/leng128888/Ikuuu/main/ikuuqd.js, timeout=60, tag=ikuu签到
