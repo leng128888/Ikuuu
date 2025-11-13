@@ -1,5 +1,5 @@
 #!name=声荐自动签到
-#!desc=自动抓token+定时领小红花（开关可控）
+#!desc=自动抓token+定时领小红花
 #!icon=https://cdn.jsdelivr.net/gh/Akimio521/BetterRuler@main/ICON/AppStore/QianJi.png
 
 [Panel]
