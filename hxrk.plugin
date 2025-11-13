@@ -1,6 +1,7 @@
 #!name=鸿星尔克自动签到
 #!desc=鸿星尔克自动抓Cookie+签到
 #!date=2025-11-13
+#!author=自用
 #!icon=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/Doraemon/Doraemon-1006.png
 
 [MITM]
