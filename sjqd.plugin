@@ -1,0 +1,20 @@
+{
+  "name": "声荐自动签到插件",
+  "description": "自动抓取token+定时领取小红花",
+  "author": "你的名称",
+  "version": "1.0.0",
+  "scripts": [
+    {
+      "type": "http-response",
+      "name": "声荐自动抓取token",
+      "url": "^https?:\\/\\/xcx\\.myinyun\\.com:4438\\/napi\\/wx\\/getUserDetail", // 精准匹配目标接口
+      "script": "https://raw.githubusercontent.com/leng128888/Ikuuu/main/yy_tk.js"
+    },
+    {
+      "type": "cron",
+      "name": "声荐小红花领取",
+      "time": "0 10,11,12 * * *",
+      "script": "https://raw.githubusercontent.com/leng128888/Ikuuu/main/yiyu.js"
+    }
+  ]
+}
